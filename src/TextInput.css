@@ -1,0 +1,7 @@
+#TextDiv{
+    background-color: crimson;
+    padding: 1em;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}

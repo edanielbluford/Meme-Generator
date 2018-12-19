@@ -1,0 +1,10 @@
+#Carousel{
+    background-color: black;
+    padding: 1em;
+    color: white;
+}
+#Images,img{
+    width: 100px;
+    display: flex
+    
+}
