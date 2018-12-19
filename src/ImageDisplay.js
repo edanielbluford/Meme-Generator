@@ -7,7 +7,7 @@ class ImageDisplay extends Component {
         return (
             <div id ='Display'>
              <p>{topText}</p>
-            <img alt={selectedImage} src= {selectedImage} />
+            <img alt={selectedImage} src= {selectedImage}/>
              <p>{bottomText}</p>
          </div>
         );

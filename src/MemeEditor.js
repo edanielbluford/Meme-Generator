@@ -25,11 +25,22 @@ class MemeEditor extends Component {
         const newValue = e.target.value;
         this.setState({bottomText:newValue})
     }
+    clickImage = (e) => {
+        console.log('image clicked!')
+        const imageId = e.target.id;
+        console.log(imageId)
+        const selectedImage = this.state.imagebucket[imageId];
+        console.log(selectedImage)
+        this.setState({selectedImage: selectedImage})
+    }
     render() {
         const {imagebucket, topText, bottomText, selectedImage} = this.state;
         return (
             <main>
-      <ImageCarousel imagebucket={imagebucket}/>
+      <ImageCarousel
+        imagebucket={imagebucket}
+        clickImage={this.clickImage}
+        />
       <ImageDisplay
         topText={topText}
         bottomText={bottomText}

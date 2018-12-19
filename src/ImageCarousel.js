@@ -3,8 +3,8 @@ import './ImageCarousel.css'
 
 class ImageCarousel extends Component {
     render() { 
-        const {imagebucket} = this.props
-        const imagebucketlist = imagebucket.map(i => <img key={i} src={i} alt={i}/>)
+        const {imagebucket, clickImage} = this.props
+        const imagebucketlist = imagebucket.map((item, index) => <img key={index} id={index} src={item} alt={item} onClick={clickImage}/>)
         return (
             <div id = 'Carousel'>
         Image Carousel
